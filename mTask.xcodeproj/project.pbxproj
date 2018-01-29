@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D88907031A7B1795D5518C3D /* Pods_mTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EC0C491CC215BD6E9C440A2 /* Pods_mTask.framework */; };
 		EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28BF201E920C007F07ED /* AppDelegate.swift */; };
 		EC1F28C7201E920D007F07ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1F28C6201E920D007F07ED /* Assets.xcassets */; };
 		EC1F28D5201E920D007F07ED /* mTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28D4201E920D007F07ED /* mTaskTests.swift */; };
 		EC1F28E0201E920D007F07ED /* mTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28DF201E920D007F07ED /* mTaskUITests.swift */; };
 		EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */; };
 		EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */; };
+		ECBD05D5201EE6680037A8E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15EB6E3779A4599188832DCF /* Pods-mTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mTask/Pods-mTask.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC0C491CC215BD6E9C440A2 /* Pods_mTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E083E3FD97B73A9FA427B9 /* Pods-mTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-mTask/Pods-mTask.release.xcconfig"; sourceTree = "<group>"; };
 		EC1F28BC201E920C007F07ED /* mTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1F28BF201E920C007F07ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC1F28C6201E920D007F07ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		EC1F28E1201E920D007F07ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88907031A7B1795D5518C3D /* Pods_mTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +79,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AFE2D3D11974FAD201BE6B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EC0C491CC215BD6E9C440A2 /* Pods_mTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1CC0513CAB8818126DA779 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15EB6E3779A4599188832DCF /* Pods-mTask.debug.xcconfig */,
+				88E083E3FD97B73A9FA427B9 /* Pods-mTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC1F28B3201E920C007F07ED = {
 			isa = PBXGroup;
 			children = (
+				ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */,
 				EC1F28BE201E920C007F07ED /* mTask */,
 				EC1F28D3201E920D007F07ED /* mTaskTests */,
 				EC1F28DE201E920D007F07ED /* mTaskUITests */,
 				EC1F28BD201E920C007F07ED /* Products */,
+				CA1CC0513CAB8818126DA779 /* Pods */,
+				2AFE2D3D11974FAD201BE6B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC1F28E4201E920D007F07ED /* Build configuration list for PBXNativeTarget "mTask" */;
 			buildPhases = (
+				3D07979A937E83B6DBE388D6 /* [CP] Check Pods Manifest.lock */,
 				EC1F28B8201E920C007F07ED /* Sources */,
 				EC1F28B9201E920C007F07ED /* Frameworks */,
 				EC1F28BA201E920C007F07ED /* Resources */,
+				FE14F25043C30C00FF66652A /* [CP] Embed Pods Frameworks */,
+				5F904B2617486D4437CEBF83 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1F28C7201E920D007F07ED /* Assets.xcassets in Resources */,
+				ECBD05D5201EE6680037A8E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +295,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D07979A937E83B6DBE388D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F904B2617486D4437CEBF83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mTask/Pods-mTask-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mTask/Pods-mTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE14F25043C30C00FF66652A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mTask/Pods-mTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mTask/Pods-mTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC1F28B8201E920C007F07ED /* Sources */ = {
@@ -417,6 +511,7 @@
 		};
 		EC1F28E5201E920D007F07ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EB6E3779A4599188832DCF /* Pods-mTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +527,7 @@
 		};
 		EC1F28E6201E920D007F07ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88E083E3FD97B73A9FA427B9 /* Pods-mTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
