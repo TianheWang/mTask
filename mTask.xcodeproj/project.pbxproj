@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28BF201E920C007F07ED /* AppDelegate.swift */; };
-		EC1F28C2201E920C007F07ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28C1201E920C007F07ED /* ViewController.swift */; };
-		EC1F28C5201E920D007F07ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1F28C3201E920D007F07ED /* Main.storyboard */; };
 		EC1F28C7201E920D007F07ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1F28C6201E920D007F07ED /* Assets.xcassets */; };
-		EC1F28CA201E920D007F07ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1F28C8201E920D007F07ED /* LaunchScreen.storyboard */; };
 		EC1F28D5201E920D007F07ED /* mTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28D4201E920D007F07ED /* mTaskTests.swift */; };
 		EC1F28E0201E920D007F07ED /* mTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28DF201E920D007F07ED /* mTaskUITests.swift */; };
 /* End PBXBuildFile section */
@@ -36,10 +33,7 @@
 /* Begin PBXFileReference section */
 		EC1F28BC201E920C007F07ED /* mTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1F28BF201E920C007F07ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC1F28C1201E920C007F07ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC1F28C4201E920D007F07ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC1F28C6201E920D007F07ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC1F28C9201E920D007F07ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC1F28CB201E920D007F07ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC1F28D0201E920D007F07ED /* mTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1F28D4201E920D007F07ED /* mTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mTaskTests.swift; sourceTree = "<group>"; };
@@ -98,10 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1F28BF201E920C007F07ED /* AppDelegate.swift */,
-				EC1F28C1201E920C007F07ED /* ViewController.swift */,
-				EC1F28C3201E920D007F07ED /* Main.storyboard */,
 				EC1F28C6201E920D007F07ED /* Assets.xcassets */,
-				EC1F28C8201E920D007F07ED /* LaunchScreen.storyboard */,
 				EC1F28CB201E920D007F07ED /* Info.plist */,
 			);
 			path = mTask;
@@ -232,9 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1F28CA201E920D007F07ED /* LaunchScreen.storyboard in Resources */,
 				EC1F28C7201E920D007F07ED /* Assets.xcassets in Resources */,
-				EC1F28C5201E920D007F07ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1F28C2201E920C007F07ED /* ViewController.swift in Sources */,
 				EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,25 +282,6 @@
 			targetProxy = EC1F28DC201E920D007F07ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EC1F28C3201E920D007F07ED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC1F28C4201E920D007F07ED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EC1F28C8201E920D007F07ED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC1F28C9201E920D007F07ED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC1F28E2201E920D007F07ED /* Debug */ = {
