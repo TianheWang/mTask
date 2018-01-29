@@ -15,6 +15,8 @@
 		EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */; };
 		EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */; };
 		ECBD05D5201EE6680037A8E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */; };
+		ECBD05D8201EE72E0037A8E0 /* TasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */; };
+		ECBD05DA201EE8390037A8E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D9201EE8390037A8E0 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCoordinator.swift; sourceTree = "<group>"; };
+		ECBD05D9201EE8390037A8E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		EC1F28BE201E920C007F07ED /* mTask */ = {
 			isa = PBXGroup;
 			children = (
+				ECBD05D6201EE7070037A8E0 /* Coordinators */,
 				EC1F28F0201EA46A007F07ED /* Extensions */,
 				EC1F28ED201E9F93007F07ED /* ViewControllers */,
 				EC1F28BF201E920C007F07ED /* AppDelegate.swift */,
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */,
+				ECBD05D9201EE8390037A8E0 /* ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +169,14 @@
 				EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECBD05D6201EE7070037A8E0 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBD05DA201EE8390037A8E0 /* ViewController.swift in Sources */,
 				EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */,
 				EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */,
 				EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */,
+				ECBD05D8201EE72E0037A8E0 /* TasksCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
