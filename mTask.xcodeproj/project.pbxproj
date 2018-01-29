@@ -11,6 +11,8 @@
 		EC1F28C7201E920D007F07ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1F28C6201E920D007F07ED /* Assets.xcassets */; };
 		EC1F28D5201E920D007F07ED /* mTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28D4201E920D007F07ED /* mTaskTests.swift */; };
 		EC1F28E0201E920D007F07ED /* mTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28DF201E920D007F07ED /* mTaskUITests.swift */; };
+		EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */; };
+		EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		EC1F28DB201E920D007F07ED /* mTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1F28DF201E920D007F07ED /* mTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mTaskUITests.swift; sourceTree = "<group>"; };
 		EC1F28E1201E920D007F07ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 		EC1F28BE201E920C007F07ED /* mTask */ = {
 			isa = PBXGroup;
 			children = (
+				EC1F28F0201EA46A007F07ED /* Extensions */,
+				EC1F28ED201E9F93007F07ED /* ViewControllers */,
 				EC1F28BF201E920C007F07ED /* AppDelegate.swift */,
 				EC1F28C6201E920D007F07ED /* Assets.xcassets */,
 				EC1F28CB201E920D007F07ED /* Info.plist */,
@@ -114,6 +120,22 @@
 				EC1F28E1201E920D007F07ED /* Info.plist */,
 			);
 			path = mTaskUITests;
+			sourceTree = "<group>";
+		};
+		EC1F28ED201E9F93007F07ED /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EC1F28F0201EA46A007F07ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */,
 				EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */,
+				EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

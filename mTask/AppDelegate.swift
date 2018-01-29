@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     window = UIWindow(frame: UIScreen.main.bounds)
 
-    let homeViewController = UIViewController()
+    let homeViewController = TasksViewController()
     homeViewController.view.backgroundColor = UIColor.red
     let navigationController = UINavigationController(rootViewController: homeViewController)
     navigationController.navigationBar.isTranslucent = false
