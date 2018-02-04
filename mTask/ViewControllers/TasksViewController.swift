@@ -11,7 +11,7 @@ import UIKit
 
 class TasksViewController: UIViewController {
 
-  // Lifecycle
+  // MARK: Lifecycle
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,7 +19,7 @@ class TasksViewController: UIViewController {
     setUpTableView()
   }
 
-  // Private
+  // MARK: Private
   private var tableView = UITableView()
   fileprivate var dummyData = ["Line 1", "Line 2", "Line 3"]
   fileprivate let cellId = "cellId"
@@ -49,11 +49,11 @@ extension TasksViewController: UITableViewDelegate {
 
 extension TasksViewController: UITableViewDataSource {
 
-  public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dummyData.count
   }
 
-  public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath as IndexPath)
     cell.textLabel?.text = "\(dummyData[indexPath.row])"
     return cell

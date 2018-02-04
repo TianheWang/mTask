@@ -16,7 +16,9 @@
 		EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */; };
 		ECBD05D5201EE6680037A8E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */; };
 		ECBD05D8201EE72E0037A8E0 /* TasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */; };
-		ECBD05DA201EE8390037A8E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D9201EE8390037A8E0 /* ViewController.swift */; };
+		ECBD05DA201EE8390037A8E0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D9201EE8390037A8E0 /* SignInViewController.swift */; };
+		ECBD0616202694560037A8E0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0615202694560037A8E0 /* LoginCoordinator.swift */; };
+		ECBD06182026A5480037A8E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD06172026A5480037A8E0 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,9 @@
 		EC1F28F1201EA489007F07ED /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		ECBD05D4201EE6670037A8E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksCoordinator.swift; sourceTree = "<group>"; };
-		ECBD05D9201EE8390037A8E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECBD05D9201EE8390037A8E0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		ECBD0615202694560037A8E0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		ECBD06172026A5480037A8E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				EC1F28EE201E9FBF007F07ED /* TasksViewController.swift */,
-				ECBD05D9201EE8390037A8E0 /* ViewController.swift */,
+				ECBD05D9201EE8390037A8E0 /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				ECBD05D7201EE72E0037A8E0 /* TasksCoordinator.swift */,
+				ECBD0615202694560037A8E0 /* LoginCoordinator.swift */,
+				ECBD06172026A5480037A8E0 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -378,11 +384,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBD05DA201EE8390037A8E0 /* ViewController.swift in Sources */,
+				ECBD05DA201EE8390037A8E0 /* SignInViewController.swift in Sources */,
 				EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */,
 				EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */,
 				EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */,
+				ECBD0616202694560037A8E0 /* LoginCoordinator.swift in Sources */,
 				ECBD05D8201EE72E0037A8E0 /* TasksCoordinator.swift in Sources */,
+				ECBD06182026A5480037A8E0 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
