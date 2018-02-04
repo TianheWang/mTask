@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import GoogleSignIn
+
 class AppCoordinator: NSObject {
 
   // MARK: Lifecycle
@@ -22,9 +24,16 @@ class AppCoordinator: NSObject {
   // MARK: Internal
 
   func startUp() {
-    guard let rootViewController = mainWindow.rootViewController else { return }
+    guard let rootViewController = rootViewController else { return }
     let loginCoordinator = LoginCoordinator(presentingViewController: rootViewController)
-    loginCoordinator.startFlow()
+    loginCoordinator.startFlow { [weak self] user in
+      guard let user = user else {
+        // handle login error
+        return
+      }
+      self?.didLogin(for: user)
+      print("loggin success")
+    }
     self.loginCoordinator = loginCoordinator
   }
 
@@ -32,6 +41,10 @@ class AppCoordinator: NSObject {
 
   private var mainWindow: UIWindow
   private var loginCoordinator: LoginCoordinator?
+  private var tasksCoordinator: TasksCoordinator?
+  private var rootViewController: UIViewController? {
+    return mainWindow.rootViewController
+  }
 
   private func initializeNavigation() {
     // set a black background for window
@@ -43,5 +56,11 @@ class AppCoordinator: NSObject {
     mainWindow.rootViewController = rootViewController
 
     mainWindow.makeKeyAndVisible()
+  }
+
+  private func didLogin(for user: GIDGoogleUser) {
+    guard let rootViewController = rootViewController else { return }
+    tasksCoordinator = TasksCoordinator(user: user, presentingViewController: rootViewController)
+    tasksCoordinator?.startFlow()
   }
 }

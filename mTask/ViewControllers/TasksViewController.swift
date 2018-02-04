@@ -9,19 +9,31 @@
 import Foundation
 import UIKit
 
+// TODO: create own task model
+import GoogleAPIClientForREST
+
 class TasksViewController: UIViewController {
 
   // MARK: Lifecycle
+  init(dataSource: TasksDataSource) {
+    super.init(nibName: nil, bundle: nil)
+    self.dataSource = dataSource
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
     setUpTableView()
+    tasks = dataSource?.allTasks() ?? []
   }
 
   // MARK: Private
   private var tableView = UITableView()
-  fileprivate var dummyData = ["Line 1", "Line 2", "Line 3"]
+  fileprivate var dataSource: TasksDataSource?
+  fileprivate var tasks: [GTLRTasks_Task] = []
   fileprivate let cellId = "cellId"
 
   private func setUpTableView() {
@@ -43,19 +55,19 @@ extension TasksViewController: UITableViewDelegate {
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print("Num: \(indexPath.row)")
-    print("Value: \(dummyData[indexPath.row])")
+    print("Value: \(tasks[indexPath.row])")
   }
 }
 
 extension TasksViewController: UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dummyData.count
+    return tasks.count
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath as IndexPath)
-    cell.textLabel?.text = "\(dummyData[indexPath.row])"
+    cell.textLabel?.text = "\(tasks[indexPath.row].title ?? "")"
     return cell
   }
 }

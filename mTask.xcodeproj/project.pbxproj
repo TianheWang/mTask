@@ -19,6 +19,7 @@
 		ECBD05DA201EE8390037A8E0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD05D9201EE8390037A8E0 /* SignInViewController.swift */; };
 		ECBD0616202694560037A8E0 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD0615202694560037A8E0 /* LoginCoordinator.swift */; };
 		ECBD06182026A5480037A8E0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD06172026A5480037A8E0 /* AppCoordinator.swift */; };
+		ECBD061B2026CE7E0037A8E0 /* TasksDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBD061A2026CE7E0037A8E0 /* TasksDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		ECBD05D9201EE8390037A8E0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ECBD0615202694560037A8E0 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		ECBD06172026A5480037A8E0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		ECBD061A2026CE7E0037A8E0 /* TasksDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		EC1F28BE201E920C007F07ED /* mTask */ = {
 			isa = PBXGroup;
 			children = (
+				ECBD06192026CE630037A8E0 /* DataSources */,
 				ECBD05D6201EE7070037A8E0 /* Coordinators */,
 				EC1F28F0201EA46A007F07ED /* Extensions */,
 				EC1F28ED201E9F93007F07ED /* ViewControllers */,
@@ -183,6 +186,14 @@
 				ECBD06172026A5480037A8E0 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		ECBD06192026CE630037A8E0 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				ECBD061A2026CE7E0037A8E0 /* TasksDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBD05DA201EE8390037A8E0 /* SignInViewController.swift in Sources */,
+				ECBD061B2026CE7E0037A8E0 /* TasksDataSource.swift in Sources */,
 				EC1F28F2201EA489007F07ED /* UIView+Constraints.swift in Sources */,
 				EC1F28C0201E920C007F07ED /* AppDelegate.swift in Sources */,
 				EC1F28EF201E9FBF007F07ED /* TasksViewController.swift in Sources */,
