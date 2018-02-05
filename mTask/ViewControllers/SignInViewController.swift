@@ -45,9 +45,9 @@ class SignInViewController: UIViewController, GIDSignInUIDelegate {
 
 extension SignInViewController: GIDSignInDelegate {
 
-  func sign(_ signIn: GIDSignIn!,
-            didSignInFor user: GIDGoogleUser!,
-            withError error: Error!)
+  func sign(_ signIn: GIDSignIn,
+            didSignInFor user: GIDGoogleUser,
+            withError error: Error)
   {
     didLogin?(user, error)
   }
